@@ -1,0 +1,17 @@
+# syntax=docker/dockerfile:1.4
+
+FROM node:lts-slim
+
+WORKDIR /app
+
+COPY --link entrypoint.sh /entrypoint.sh
+
+RUN chmod +x /entrypoint.sh
+
+COPY --link . .
+
+RUN npm install -g pnpm && pnpm install
+
+ENTRYPOINT ["/entrypoint.sh"]
+
+CMD ["pnpm", "run", "dev"]

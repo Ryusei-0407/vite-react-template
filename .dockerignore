@@ -1,0 +1,11 @@
+.DS_Store
+.idea/
+.vscode/
+.git/
+.github/
+.gitignore
+nginx/
+node_modules/
+.pnpm-store/
+dist/
+build/
