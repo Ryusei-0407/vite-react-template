@@ -32,7 +32,6 @@ module.exports = {
   plugins: ['react', '@typescript-eslint', 'prettier', 'simple-import-sort'],
   rules: {
     'react/react-in-jsx-scope': 'off',
-    'arrow-body-style': ['error', 'always'],
     'react/jsx-filename-extension': [
       2,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
