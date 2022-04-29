@@ -24,12 +24,15 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
+      modules: true,
+      arrowFunctions: true,
     },
     ecmaVersion: '2021',
   },
   plugins: ['react', '@typescript-eslint', 'prettier', 'simple-import-sort'],
   rules: {
     'react/react-in-jsx-scope': 'off',
+    'arrow-body-style': ['error', 'always'],
     'react/jsx-filename-extension': [
       2,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
